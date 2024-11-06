@@ -1,0 +1,582 @@
+:root{
+    --titulos: rgb(219, 255, 0);
+}
+body{
+    background-color: grey;
+    margin: 0px;
+    font-family: "Oswald", sans-serif;
+    box-sizing: border-box;
+}
+header{
+    /* border: solid red 2px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+    
+    
+}
+.top-bar{
+    background-color: black;
+    /* border-style: dashed; */
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 120px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    top: 0px;
+    z-index: 1; 
+    position: fixed;
+}
+.logo{
+    margin: 15px;
+}
+.main-menu{
+    /*background-color: blueviolet;*/
+    margin: 0px 0px 0px 50px;
+    width: 100%;
+}
+.nav{
+    /* background-color: azure; */
+    display: flex;
+    gap: 30px;
+    text-transform: uppercase;
+    
+    
+}
+.nav li{
+    list-style-type: none;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+.nav a:hover{
+    color: var(--titulos);
+}
+.hero{
+    color: white;
+    background-color: black;
+    background-image: url(https://webdesign-finder.com/youko-boxing-club/wp-content/uploads/2021/02/slide_01.jpg);
+    background-position: top right;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    margin: 120px 0px 0px 0px;
+    
+    
+}
+.herocontent{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 200px auto;
+
+}
+.herotitle{
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1.1em;
+    text-transform: uppercase;
+    width: 60%;
+}
+.herotitle span, .box span{
+    color: var(--titulos);
+}
+.herotext{
+    text-align: justify;
+    width: 50%;
+    font-family: "Poppins", serif;
+    font-stretch: condensed;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+.cta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+    gap: 20px;
+    margin-top: 20px;
+}
+.cta a{
+    
+    box-sizing: content-box;
+    height: 30px;
+    width: 150px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#boton1{
+    background-color: var(--titulos);
+    color: black;
+}
+#boton1:hover{
+    background-color: white;
+    color: black;
+}
+
+#boton2{
+    color: white;
+    border: solid white 2px;
+}
+#boton2:hover{
+    border: solid white 2px;
+    background-color: white;
+    color: black;
+}
+.cajas{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 20px;
+    /* margin: 20px auto; */
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px; 
+}
+.box{
+    color: white;
+    background-color: white;
+    /* border: 1px red dotted; */
+    height: 370px;
+    width: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 20px 10px;
+}
+.box p{
+    margin: 0px;
+    padding: 10px 0px 20px 20px;
+    font-family: "Poppins", serif;
+    font-stretch: condensed;
+    line-height: 1.8em;
+    font-size: 0.8em;
+
+}
+.box h3{
+    margin: 0;
+    padding: 20px 0px 0px 20px;
+}
+
+.box1{
+    background-image: url("images/thai.jpg");
+    background-size: cover;
+}
+.box2{
+    background-image: url("images/english.jpg");
+    background-size: cover;
+}
+.box3{
+    background-image: url("images/women.jpg");
+    background-size: cover;
+}
+.about1{
+    background-color: white;
+    display: flex;
+}
+.foto{
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.foto img{
+    width: 70%;
+}
+.about-content{
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 50px;
+}
+.tag-line{
+    font-family: "Poppins", serif;
+    font-stretch: condensed;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+.about1 p{
+    font-family: "Poppins", serif;
+    font-stretch: condensed;
+    font-size: 1em;
+    line-height: 2em;
+    width: 80%;
+}
+.about1-title{
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-stretch: condensed;
+    position: relative;
+    z-index: 0;
+}
+.about1-title::before{
+    content: '"';
+    color: var(--titulos);
+    font-size: 3em;
+    position: absolute;
+    top: -50px;
+    left: -30px;
+    z-index: -1;
+
+    
+}
+.signature{
+    display: flex
+}
+.signature h5{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px 0px 0px 0px;
+    font-family: "Poppins", serif;
+    font-size: 1.2em;
+    line-height: 2em;
+    font-weight: 700;
+
+}
+.s1{
+    width: 50%;
+}
+.s1 p{
+
+    font-family: "Poppins", serif;
+    font-stretch: condensed;
+    line-height: 1.5em;
+    font-size: 1em;
+    margin: 0;
+
+}
+.marco{
+    font-size: 150px;
+    position: absolute;
+    top: 100%;
+    left: 50px;
+    text-transform: uppercase;
+    opacity: .1;
+    text-align: center;
+
+}
+
+.features{
+    color: white;
+    background-image: url(https://webdesign-finder.com/youko-boxing-club/wp-content/uploads/2021/02/bg_01.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; 
+    height: 100vh;
+    width: 100%;
+}
+
+
+.features-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;      /* Alinea el texto en el centro */        /* Centra el elemento si tiene un ancho definido */
+    width: 100%;
+}
+.features-title{
+
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-stretch: condensed;
+    text-align: center;      /* Alinea el texto en el centro */        /* Centra el elemento si tiene un ancho definido */
+    width: 100%;   
+    margin-top: 50px;
+}
+.features-title span{
+    color: var(--titulos);
+}
+.feat-tag-line{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+.boxt-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.boxt{
+    /* border: 1px red dotted;  */
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    height: 200px;
+    width: 300px;
+    transition: border-color 0.3s ease;
+    text-align: center;
+
+}
+.box p{
+    margin: 0px;
+    padding: 10px 0px 20px 20px;
+    font-family: "Poppins", serif;
+    font-stretch: condensed;
+    line-height: 1.8em;
+    font-size: 0.8em;
+
+}
+.box h3{
+    margin: 0;
+    padding: 20px 0px 0px 20px;
+}
+.boxt h3 span {
+    color: var(--titulos);
+}
+.boxt-container .boxt:nth-child(1) { 
+    border-right: 5px solid rgba(128, 128, 128, 0.28); 
+    border-bottom: 5px solid rgba(128, 128, 128, 0.28); 
+}
+.boxt-container .boxt:nth-child(2){ 
+    border-right: 5px solid rgba(128, 128, 128, 0.28); 
+    border-bottom: 5px solid rgba(128, 128, 128, 0.28); 
+    /* border-left: 5px solid rgba(128, 128, 128, 0.28);  */
+}
+.boxt-container .boxt:nth-child(3) { 
+    border-left: 5px solid rgba(128, 128, 128, 0.28); 
+    border-bottom: 5px solid rgba(128, 128, 128, 0.28);  
+}
+.boxt-container .boxt:nth-child(4) { 
+    border-right: 5px solid rgba(128, 128, 128, 0.28);  
+    border-top: 5px solid rgba(128, 128, 128, 0.28); 
+}
+.boxt-container .boxt:nth-child(5) { 
+    border-right: 5px solid rgba(128, 128, 128, 0.28); 
+    border-top: 5px solid rgba(128, 128, 128, 0.28); 
+}
+.boxt-container .boxt:nth-child(6) { 
+    border-left: 5px solid rgba(128, 128, 128, 0.28); 
+    border-top: 5px solid rgba(128, 128, 128, 0.28); 
+}
+.boxt-container .boxt:nth-child(1):hover { 
+    border-right-color: var(--titulos); 
+    border-bottom-color: var(--titulos); 
+}
+.boxt-container .boxt:nth-child(2):hover {  
+    border-left: 5px solid;
+    border-left-color: var(--titulos); 
+    border-right-color: var(--titulos); 
+    border-bottom-color: var(--titulos); 
+}
+.boxt-container .boxt:nth-child(3):hover {  
+    border-left-color: var(--titulos); 
+    border-bottom-color: var(--titulos); 
+}
+.boxt-container .boxt:nth-child(4):hover { 
+    border-right-color: var(--titulos);
+    border-top-color: var(--titulos); 
+}
+.boxt-container .boxt:nth-child(5):hover { 
+    border-left: 5px solid;
+    border-left-color: var(--titulos);
+    border-right-color: var(--titulos); 
+    border-top-color: var(--titulos); 
+}
+.boxt-container .boxt:nth-child(6):hover { 
+    border-left-color: var(--titulos); 
+    border-top-color: var(--titulos); 
+}
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.about-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.about-history, .about-mission {
+    width: 45%;
+    margin-bottom: 30px;
+}
+
+.about-history h2, .about-mission h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.about-history p, .about-mission p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6em;
+    margin-top: 10px;
+}
+
+.about-team {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 80%;
+    justify-content: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+}
+
+.team-info {
+    max-width: 700px;
+    text-align: left;
+}
+
+.team-info h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.team-info p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6em;
+}
+/* Estilos para la sección de Contacto */
+.contact {
+    padding: 50px 20px;
+    color: white;
+    background-color: #000000;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    color: var(--titulos);
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-form label {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+.contact-form button.submit-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button.submit-btn:hover {
+    background-color: #555;
+}
+
+.contact-info {
+    margin-top: 50px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.contact-info h3 {
+    font-size: 2em;
+    color: var(--titulos);
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .about-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-info {
+        text-align: center;
+    }
+}
